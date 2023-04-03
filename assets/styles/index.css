@@ -1,7 +1,7 @@
 /*variables*/
 :root {
     --mainLightColor: #f0f0f0;
-    --mainDarkColor: #303841;
+    --mainDarkColor: #1a2027;
     --primaryColor: #5BC0EB; /*#be3144*/
     --secondaryColor: #45567d;
 }
@@ -134,7 +134,7 @@ a {
 }
 
 #projects .projects-grid .project{
-    background-color: var(--mainDarkColor);     
+    background-color: #232b3d;     
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -166,7 +166,7 @@ a {
 
 #projects .btn-show-all {
     font-size: 1rem;
-    background-color: var(--mainDarkColor);
+    background-color: #232b3d;
     transition: background-color 0.3s ease-out;
     color: var(--mainLightColor);
     border-radius: 3px;
