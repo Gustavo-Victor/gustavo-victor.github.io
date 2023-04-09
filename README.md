@@ -1,4 +1,6 @@
 # Personal Portfolio 
 
-This project is my personal portfolio
+Este projeto é meu portfolio de desenvolvedor Front-End
+
+<br/>
 
