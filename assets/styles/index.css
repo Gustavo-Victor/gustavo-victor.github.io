@@ -485,7 +485,22 @@ i.skill__icon:hover {
     padding: 0;     
 }
 
-
+#loom-companion-mv3 {
+    all: unset;
+    display: none; 
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    visibility: hidden; 
+    max-height: 0vh; 
+    min-height: 0vh; 
+    height: 0vh; 
+    width: 0vw; 
+    min-width: 0vh; 
+    max-width: 0vh;
+}
 
 
 .footer__title {
