@@ -249,6 +249,7 @@ img.logo {
 }
 
 .button {
+    cursor: pointer;
     display: inline-block; 
     background-color: var(--first-color);
     color: #fff;
@@ -315,6 +316,7 @@ img.logo {
 
 .skills__subtitle {
     margin-bottom: var(--mb-2);
+    font-size: 1.1rem;
 }
 
 .skills__text {
@@ -362,49 +364,15 @@ i.skill__icon:hover {
     filter: grayscale(0%);
 }
 
-/*
-.skills__info {
-    display: flex;
-    align-items: center;
-}
-
-.skills__bar {
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color); 
-    height: .25rem; 
-    border-radius: .5rem; 
-    z-index: var(--z-back);  
-}
-
-.skills__html {
-    width: 80%; 
-}
-
-.skills__css {
-    width: 75%; 
-}
-
-.skills__javascript {
-    width: 60%; 
-}
-
-.skills__react {
-    width: 50%; 
-}
-
-.skills__typescript {
-    width: 40%; 
-}
-*/
-
-
-
 
 /*work*/
 .work {
     text-align: center;     
+    height: auto;
+}
+
+.work .work__text {
+    margin-bottom: var(--mb-4);
 }
 
 .work__container {
@@ -432,8 +400,18 @@ i.skill__icon:hover {
     transform: scale(1.1); 
 }
 
+.work #btn-projects {
+    margin: var(--mb-4) 0;
+}
+
+
 
 /*contact*/
+.contact {
+    margin-top: -1rem;
+    height: auto; 
+}
+
 .contact__input {
     width: 100%; 
     font-size: var(--normal-font-size); 
@@ -444,6 +422,10 @@ i.skill__icon:hover {
     outline: none; 
     border: 0.5px solid var(--second-color);  
     margin-bottom: var(--mb-4); 
+}
+
+.contact textarea {
+    line-height: 1.5;
 }
 
 .contact__button {
@@ -457,6 +439,23 @@ i.skill__icon:hover {
     border-radius: 0.5rem; 
     background-color: var(--first-color);
     color: #fff;
+}
+
+.contact .thankyou__section {
+    text-align: center;   
+    height: auto; 
+    min-height: 300px; 
+    gap: 1.2rem;
+}
+
+.contact .thankyou__section h3 {
+    color: var(--second-color);
+    font-size: 1.4rem; 
+    margin-bottom: var(--mb-2);
+}
+
+.contact .thankyou__section p { 
+    margin-bottom: var(--mb-4);
 }
 
 
@@ -509,7 +508,7 @@ i.skill__icon:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .copy__section .author a {
@@ -641,7 +640,7 @@ i.skill__icon:hover {
         width: 300px;
     }
     
-    /*work*/
+    /*work*/    
     .work__container {
         grid-template-columns: repeat(3,1fr); 
         column-gap: 2rem;

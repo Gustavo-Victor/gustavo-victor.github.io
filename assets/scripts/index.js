@@ -12,7 +12,17 @@ const skillsArr = [
     {id: "jquery", name: "jQuery", iconClass: "bx bxl-jquery skill__icon", color: "#1066A9"},
     {id: "sass", name: "SASS", iconClass: "bx bxl-sass skill__icon", color: "#C76395"},
     {id: "mongodb", name: "MongoDB", iconClass: "bx bxl-mongodb skill__icon", color: "#118D4D"}
-]
+]; 
+
+const contactForm = window.document.querySelector(".contact__form");
+const inputName = window.document.querySelector("#name");
+const inputEmail = window.document.querySelector("#email");
+const inputSubject = window.document.querySelector("#subject");
+const inputMessage = window.document.querySelector("#message");
+const btnSubmit = window.document.querySelector("#submit"); 
+const contactSection = window.document.querySelector(".contact__container"); 
+const thankYouSection = window.document.querySelector(".thankyou__section"); 
+thankYouSection.style.display = "none"; 
 
 
 //functions 
@@ -26,7 +36,6 @@ const showMenu = (navId, toggleId) => {
         });
     };
 };
-
 
 function diplayIcons() {
     skillsArr.forEach(iconObj => {
@@ -63,7 +72,31 @@ function activeLink() {
     navMenu.classList.remove("show"); 
 }; 
 
+const isValidEmail = (email) => {
+    const regex = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+(\.)?([a-z]+)?$/i; 
+    let emailString = email.toLowerCase();  
+    let endsWithString = /[a-z]+$/; 
 
+    if(!endsWithString.test(emailString)) {
+        return false; 
+    }
+    return regex.test(emailString);  
+}
+
+const isValidField = (value) => {
+    const regex = /\w{3,}/;
+    console.log(value); 
+    return regex.test(value);  
+}
+
+function sendEmail(name, email, subject, message) {
+    const recipient = "mailto:gustavovbs270@gmail.com"; 
+    const sender = `?cc=${email}`;
+    const subj = `&subject=${escape(subject)}`; 
+    const msg = `&body=${escape(message)}`; 
+    const link = recipient+sender+subj+msg; 
+    window.location.href = link;
+}
 
 //event, loops and calls to functions
 //menu show 
@@ -76,6 +109,32 @@ navLinks.forEach(link => {
 
 //display icons
 diplayIcons();
+
+
+//submit form 
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+    const name = inputName.value; 
+    const email = inputEmail.value; 
+    const subject = inputSubject.value; 
+    const message = inputMessage.value; 
+    
+    if(!isValidField(name) || !isValidEmail(email) || !isValidField(subject) || !isValidField(message)) {
+        console.log('não válido');
+        return ;
+    } else {
+        if(name.length != 0 && email.length != 0 && message.length != 0) {
+            sendEmail(name, email, subject, message);  
+            thankYouSection.style.display = "block";
+            contactSection.style.display = "none";
+            inputName.value = "";
+            inputEmail.value = "";
+            inputSubject.value = "";
+            inputMessage.value = ""; 
+        }
+        return ;
+    }
+}); 
 
 
 /*

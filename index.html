@@ -4,8 +4,8 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Gustavo Victor">
-        <meta name="description" content="This is a portfolio web page made using HTML and CSS">
-        <meta name="keywords" content="portfolio, web, page, Gustavo, HTML, CSS, JavaScript, JS, Front-end">
+        <meta name="description" content="This is a portfolio web page made using HTML, CSS and JavaScript">
+        <meta name="keywords" content="portfolio, dev, web, page, Gustavo, HTML, CSS, JavaScript, JS, Frontend">
         
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,18 +45,16 @@
                         <li class="nav__item">
                             <a href="#work" class="nav__link">Projetos</a>
                         </li>
-                        <!--
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contato</a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
                 <div class="nav__toggle" id="nav__toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
-        </header>
-        
+        </header>        
         
         <!--main-->
         <main class="l-main">
@@ -69,7 +67,7 @@
                         <span class="home__title-color">Gustavo</span> <br/>
                         <span class="occupation">Desenvolvedor Front-end</span>
                     </h1>
-                    <a href="#footer" class="button" id="btn-contact">Contato</a>
+                    <a href="#contact" class="button" id="btn-contact">Contato</a>
                 </div>        
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/gustavovictor/" target="_blank" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
@@ -92,7 +90,7 @@
                     
                     <div class="about__article">
                         <h2 class="about__subtitle">Me chamo Gustavo</h2>
-                        <p class="about__text">Eu sou um estudante de Ciência da Computação buscando primeira oportunidade na área de tecnologia. Gosto de aprender coias novas e de colocar em prática os conhecimentos que aprendo através de projetos reais.</p>
+                        <p class="about__text">Sou estudante de Ciência da Computação. Gosto de aprender coias novas e de colocar em prática os conhecimentos que aprendo através de projetos reais. Atualmente, meu foco é frontend, mas sonho em me tornar um desenvolvedor fullstack.</p>
                         <a href="./assets/documents/gustavo_cev.pdf" download="gustavo_curriculo" target="_blank" class="button" id="btn-cev">Currículo</a>
                     </div>
                 </div>
@@ -106,7 +104,7 @@
                 <div class="skills__container bg-grid">
                     <div>
                         <h2 class="skills__subtitle">Minhas skills</h2>
-                        <p class="skills__text">Conheça as principais linguagens e ferramentas que mais uso no dia a dia.</p>
+                        <p class="skills__text">Conheça as principais linguagens e ferramentas que mais costumo usar.</p>
                         
                         <div class="skills__data"></div>
                     </div>
@@ -116,6 +114,7 @@
             <!--work-->
             <section class="work section" id="work">
                 <h2 class="section-title">Projetos</h2>
+                <p class="work__text">Conheça alguns dos meus melhores projetos.</p>                
                 
                 <div class="work__container bg-grid">
                     <a href="https://codepen.io/gustavo_victor/pen/LYgEbeW" target="_blank" class="work__single">
@@ -137,41 +136,59 @@
                         <img class="work__img" src="./assets/images/imovi.png" alt="Imovi Landing Page" title="Imovi Landing Page" />
                     </a>
                 </div>
+                <a href="https://github.com/Gustavo-Victor?tab=repositories" class="button" id="btn-projects" target="_blank">Ver mais</a>
             </section>
             
-            <!--contact   
+            <!--contact -->  
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contato</h2>
                 
                 <div class="contact__container bg-grid">
                     <form action="#" class="contact__form">
                         <input 
                                type="text"
-                               placeholder="Name..."
+                               placeholder="Nome..."
                                class="contact__input"
                                required maxlength="70"
                                minlength="4"
                                name="name"
+                               id="name"
                         /> 
                         <input 
                                type="email"
-                               placeholder="Email..."
+                               placeholder="E-mail..."
                                class="contact__input"
                                required name="email"
                                maxlength="70"
                                minlength="11"
                                name="email"
+                               id="email"
+                        />
+                        <input 
+                               type="text"
+                               placeholder="Assunto..."
+                               class="contact__input"
+                               name="subject"
+                               maxlength="50"
+                               minlength="7"
+                               id="subject"
                         />
                         <textarea 
                                   name="message"
                                   class="contact__input"
                                   required
-                                  placeholder="Your comment..."
-                                  id="" cols="0" rows="10"></textarea>
+                                  placeholder="Mensagem..."
+                                  id="message" cols="0" rows="10"></textarea>
                         <input type="submit" id="submit" value="Enviar" class="contact__button" />
                     </form>
                 </div>
-            </section>-->
+                
+                <div class="thankyou__section">
+                    <h3>Muito obgrigado!!</h3>
+                    <p>Assim que possível estarei entrando em contato com você!</p>
+                    <a class="button" id="btn__reload" href="./index.html">Recarregar</a>
+                </div>
+            </section>
         </main>
         
         <!--footer-->
