@@ -408,7 +408,6 @@ i.skill__icon:hover {
 
 /*contact*/
 .contact {
-    margin-top: -1rem;
     height: auto; 
 }
 
@@ -443,8 +442,6 @@ i.skill__icon:hover {
 
 .contact .thankyou__section {
     text-align: center;   
-    height: auto; 
-    min-height: 300px; 
     gap: 1.2rem;
 }
 
@@ -461,6 +458,7 @@ i.skill__icon:hover {
 
 /*footer*/
 .footer {
+    height: auto;
     background-color: var(--second-color);
     color: #fff;
     text-align: center; 
