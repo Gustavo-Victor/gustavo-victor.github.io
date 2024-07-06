@@ -17,7 +17,7 @@ export default function Projects() {
                     <div
                         key={project.title}
                         className="mb-8 flex flex-wrap lg:justify-center">
-                        <motion.div 
+                        <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
                             initial={{ opacity: 0, x: -100 }}
                             transition={{ duration: 1 }}
@@ -28,7 +28,7 @@ export default function Projects() {
                                 alt={project.title}
                                 className="mb-6 rounded w-full sm:max-w-48" />
                         </motion.div>
-                        <motion.div 
+                        <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
                             initial={{ opacity: 0, x: 100 }}
                             transition={{ duration: 1 }}
@@ -39,6 +39,20 @@ export default function Projects() {
                                 {project.technologies.map((tech, techIndex) => (
                                     <span className="rounded px-2 py-1 bg-neutral-900 text-purple-400 text-sm font-medium" key={techIndex}>{tech}</span>
                                 ))}
+                            </div>
+                            <div className="flex items-center mt-4 gap-3">
+                                <a
+                                    className="py-2 px-4 rounded bg-transparent border-2 border-purple-400 cursor-pointer"
+                                    target="_blank" 
+                                    href={project.repositoryURL}>
+                                    Repositório
+                                </a>
+                                <a 
+                                    className="py-2 px-4 rounded bg-purple-400 text-neutral-900 border-2 border-purple-400 cursor-pointer" 
+                                    target="_blank" 
+                                    href={project.projectURL}>
+                                    Website
+                                </a>
                             </div>
                         </motion.div>
                     </div>

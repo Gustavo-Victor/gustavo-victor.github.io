@@ -12,9 +12,9 @@ export default function NavBar() {
             src={logo} alt="Logo" />
         </div>
         <div className="m-8 flex items-center gap-4 text-2xl">
-          <FaLinkedin />
-          <FaInstagram />
-          <FaGithub />
+          <a href="https://linkedin.com/in/gustavovictor/" target="_blank"><FaLinkedin /></a>
+          <a href="https://github.com/Gustavo-Victor" target="_blank"><FaGithub /></a>          
+          <a href="https://instagram.com/gustav0_vbs" target="_blank"><FaInstagram /></a>
         </div>
       </nav>
     </header>

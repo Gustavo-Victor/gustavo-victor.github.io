@@ -3,9 +3,9 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque unde sapiente harum maiores eligendi, quisquam, labore similique laudantium voluptatum blanditiis eveniet enim. Cupiditate placeat esse, incidunt quo nemo fugiat nulla!`;
+export const HERO_CONTENT = `Estudo e desenvolvo projetos pessoais e acadêmicos em busca de primeira oportunidade na área.`;
 
-export const ABOUT_TEXT = `Sou um estudante de programação dedicado e versável, curioso por aprender e criar aplicações web práticas e fáceis de usar. Posuo conhecimentos em tecnologias como ReactJS, Node.js, MySQL, PostgreSQL e MongoDB tendo desenvolvido diversos projetos. Atualmente busco minha primeira oportunidade na área.`;
+export const ABOUT_TEXT = `Sou um estudante de programação dedicado e um pouco curioso para aprender e criar aplicações web práticas e fáceis de usar. Posuo conhecimentos em tecnologias como ReactJS, Node.js, MySQL, PostgreSQL e MongoDB tendo desenvolvido diversos projetos. Atualmente busco minha primeira oportunidade na área.`;
 
 export const EXPERIENCES = [
     {
@@ -49,20 +49,20 @@ export const PROJECTS = [
         projectURL: "https://kanban-app-five-fawn.vercel.app/"
     },
     {
-        title: "ReactGram",
+        title: "Secret Word Game",
         image: project2,
         description:
-            "Uma aplicação fullstack que simula algumas funcionalidades principais de uma rede social como gerenciamento de perfis, posts, likes, comentários, etc.",
-        technologies: ["HTML", "CSS", "React", "Redux", "MongoDB", "Node.js", "Express", "JWT"],
-        repositoryURL: "https://github.com/Gustavo-Victor/reactgram",
-        projectURL: "https://reactgram-4yia.onrender.com/login"
+            "Website que simula um jogo de descobrir a palavra secreta",
+        technologies: ["HTML", "CSS", "React"],
+        repositoryURL: "https://github.com/Gustavo-Victor/secret-word-game",
+        projectURL: "https://secret-word-game.netlify.app/"
     },
     {
         title: "Get a Pet",
         image: project3,
         description:
             "Aplicação fullstack que simula um sistema de adoção de pets, com funcionalidades como gerenciamento de usuários, pets, agendamento para adoção, entre outras.",
-        technologies: ["HTML", "CSS", "React", "MongoDB", "Node.js", "Express", "JWT"],
+        technologies: ["HTML", "CSS", "React", "MongoDB", "Node.js", "Express", "JWT", "API"],
         repositoryURL: "https://github.com/Gustavo-Victor/get-a-pet",
         projectURL: "https://get-a-pet-mpw4.onrender.com/"
     },
@@ -88,8 +88,8 @@ export const PROJECTS = [
         title: "JS Calculator",
         image: project4,
         description:
-            "Aplicação React com TypeScript que simula algumas funcionalidades principais de uma calculadora.",
-        technologies: ["HTML", "SASS", "TypeScript", "React"],
+            "Aplicação que simula algumas funcionalidades principais de uma calculadora.",
+        technologies: ["HTML", "SASS", "React", "TypeScript"],
         repositoryURL: "https://github.com/Gustavo-Victor/js-calculator",
         projectURL: "https://js-calculator-mu-five.vercel.app/"
     },
