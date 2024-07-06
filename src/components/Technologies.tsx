@@ -11,20 +11,20 @@ import { motion } from "framer-motion";
 
 
 
-const iconVariants = (duration: number) => ({
-    initial: { y: -10 },
-    animate: {
-        y: [10, -10],
-        transition: {
-            duration,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "reverse"
-        }
-    }
-})
+// const iconVariants = (duration: number) => ({
+//     animate: {
+//         y: [10, -10],
+//         transition: {
+//             duration,
+//             ease: "linear",
+//             repeat: Infinity,
+//             repeatType: "reverse"
+//         }
+//     }
+// })
 
 export default function Technologies() {
+
     return (
         <section id="technologies" className="border-b border-neutral-900 pb-24 ">
             <motion.h2
@@ -38,52 +38,52 @@ export default function Technologies() {
                 transition={{ duration: 1.5 }}
                 className="flex flex-wrap items-center justify-center gap-4">
                 <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(3)}
+                    initial={{ y: 10 }}
+                    animate={{ y: [10, -10] }}
+                    transition={{duration: 3, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiHtml5Line className="text-7xl text-orange-500" />
                 </motion.div>
                 <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(3.5)}
+                    initial={{ y: 10 }}
+                    animate={{ y: [10, -10] }}
+                    transition={{duration: 2.5, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiCss3Line className="text-7xl text-blue-300" />
                 </motion.div>
                 <motion.div
+                    initial={{ y: 10 }}
+                    transition={{duration: 4, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
                     className="rounded-2xl border-4 border-neutral-800 p-4"
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(4)}>
+                    animate={{ y: [10, -10] }}>
                     <RiJavascriptLine className="text-7xl text-yellow-400" />
                 </motion.div>
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(2.5)}>
+                    initial={{ y: 10 }}
+                    transition={{duration: 5, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
+                    animate={{ y: [10, -10] }}>
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(2)}>
+                    initial={{ y: 10 }}
+                    transition={{duration: 2, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
+                    animate={{ y: [10, -10] }}>
                     <RiNodejsLine className="text-7xl text-lime-800" />
                 </motion.div>
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(4.5)}>
+                    initial={{ y: 10 }}
+                    animate={{ y: [10, -10] }}
+                    transition={{duration: 3, ease: "linear", repeat: Infinity, repeatType: "reverse"}}>
                     <SiMongodb className="text-7xl text-green-600" />
                 </motion.div>
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
-                    initial="initial"
-                    animate="animate"
-                    variants={iconVariants(2)}>
+                    initial={{ y: 10 }}
+                    animate={{ y: [10, -10] }}
+                    transition={{duration: 2.5, ease: "linear", repeat: Infinity, repeatType: "reverse"}}>
                     <SiPostgresql className="text-7xl text-sky-900" />
                 </motion.div>
             </motion.div>

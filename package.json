@@ -1,6 +1,7 @@
 {
   "name": "gustavo-victor.github.io",
   "private": true,
+  "description": "My personal portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -29,5 +30,14 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gustavo-Victor/gustavo-victor.github.io"
+  },
+  "author": {
+    "name": "Gustavo Victor",
+    "email": "gustavovbs270@gmail.com",
+    "url": "https://github.com/Gustavo-Victor/"
   }
 }
