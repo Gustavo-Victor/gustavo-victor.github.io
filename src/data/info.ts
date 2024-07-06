@@ -96,7 +96,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-    address: "Rua das Primaveras, 380, Parque Internacional",
-    phoneNo: "+55 (11) 96982-0391 / +55 (11) 95960-7447",
+    address: "Campo Limpo Paulista, SP - 13232-550",
+    phoneNo: "11 96982-0391 / 11 95960-7447",
     email: "gustavovbs270@gmail.com",
 };

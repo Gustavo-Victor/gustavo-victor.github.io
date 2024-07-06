@@ -11,8 +11,8 @@ import { SiMongodb, SiPostgresql } from "react-icons/si"
 
 export default function Technologies() {
     return (
-        <div className="border-b border-neutral-900 pb-24 ">
-            <h2 className="my-20 text-center text-4xl">Technologies</h2>
+        <section id="technologies" className="border-b border-neutral-900 pb-24 ">
+            <h2 className="my-20 text-center text-4xl">Tecnologias</h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
                 <div className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiHtml5Line className="text-7xl text-orange-500" />
@@ -36,6 +36,6 @@ export default function Technologies() {
                     <SiPostgresql className="text-7xl text-sky-900" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

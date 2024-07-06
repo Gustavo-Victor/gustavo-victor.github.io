@@ -4,10 +4,10 @@ import { ABOUT_TEXT } from "../data/info";
 
 export default function About() {
     return (
-        <div className="border-b border-neutral-900 pb-4 ">
+        <section id="about" className="border-b border-neutral-900 pb-4 ">
             <h2 className="my-20 text-4xl text-center">
-                About
-                <span className="text-neutral-500">Me</span>
+                Sobre
+                <span className="text-neutral-500"> Mim</span>
             </h2>
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2 lg:p-8">
@@ -21,6 +21,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
