@@ -1,11 +1,21 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/kanban-app-image.png";
+import project2 from "../assets/projects/secret-word-game-image.png";
+import project3 from "../assets/projects/get-a-pet-image.png";
+import project4 from "../assets/projects/dev-finances-image.png";
+import project5 from "../assets/projects/thoughts-image.png";
+import project6 from "../assets/projects/js-calculator-image.png";
+
 
 export const HERO_CONTENT = `Estudo e desenvolvo projetos pessoais e acadêmicos em busca de primeira oportunidade na área.`;
 
 export const ABOUT_TEXT = `Sou um estudante de programação dedicado e um pouco curioso para aprender e criar aplicações web práticas e fáceis de usar. Posuo conhecimentos em tecnologias como ReactJS, Node.js, MySQL, PostgreSQL e MongoDB tendo desenvolvido diversos projetos. Atualmente busco minha primeira oportunidade na área.`;
+
+export const ABOUT_INFO = [
+    "💻  Desenvolvo aplicações, interfaces e APIS com programação",
+    "🧑‍🎓  Cursando análise e desenvolvimento de sistemas",
+    "💡  Interesse em desenvolvimento web",
+    "🚀  Em busca de primeira oportunidade como dev"
+]
 
 export const EXPERIENCES = [
     {
@@ -77,7 +87,7 @@ export const PROJECTS = [
     },
     {
         title: "Thoughts",
-        image: project4,
+        image: project5,
         description:
             "Uma plataforma para cadastro e gerenciamento de ideias de usuários sobre algum tema.",
         technologies: ["HTML", "CSS", "PostgreSQL", "Node.js", "Express", "Handlebars"],
@@ -86,7 +96,7 @@ export const PROJECTS = [
     },
     {
         title: "JS Calculator",
-        image: project4,
+        image: project6,
         description:
             "Aplicação que simula algumas funcionalidades principais de uma calculadora.",
         technologies: ["HTML", "SASS", "React", "TypeScript"],

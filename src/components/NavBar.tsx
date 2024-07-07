@@ -1,5 +1,5 @@
-import logo from "../assets/kevinRushLogo.png";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import logo from "../assets/logo-removebg-preview.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 export default function NavBar() {
@@ -9,12 +9,22 @@ export default function NavBar() {
         <div className="flex flex-shrink-0 items-center">
           <img
             className="mx-2 w-10"
+            width={60}
+            style={{height: "100%"}}
             src={logo} alt="Logo" />
         </div>
-        <div className="m-8 flex items-center gap-4 text-2xl">
-          <a href="https://linkedin.com/in/gustavovictor/" target="_blank"><FaLinkedin /></a>
-          <a href="https://github.com/Gustavo-Victor" target="_blank"><FaGithub /></a>          
-          <a href="https://instagram.com/gustav0_vbs" target="_blank"><FaInstagram /></a>
+        <div className="ml-8 my-8 flex items-center gap-4 text-2xl">
+          <a 
+            className="hover:text-white"
+            href="https://linkedin.com/in/gustavovictor/" 
+            target="_blank"><FaLinkedin /></a>
+          <a
+            className="hover:text-white" 
+            href="https://github.com/Gustavo-Victor" 
+            target="_blank"><FaGithub /></a>          
+          {/* <a 
+            href="https://instagram.com/gustav0_vbs" 
+            target="_blank"><FaInstagram /></a> */}
         </div>
       </nav>
     </header>

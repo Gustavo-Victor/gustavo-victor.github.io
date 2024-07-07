@@ -11,7 +11,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className="my-10 text-center text-4xl">
+                className="my-10 text-center text-3xl lg:text-4xl">
                 Entre em contato
             </motion.h2>
             <div className="text-center tracking-tighter flex flex-col items-center justify-center gap-4">
@@ -19,7 +19,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
-                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-lg">
+                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-md">
                     <FaLocationDot className="hover:text-white" />
                     {CONTACT.address}
                 </motion.p>
@@ -27,7 +27,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
-                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-lg">
+                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-md">
                     <FaPhone className="hover:text-white" />
                     {CONTACT.phoneNo}
                 </motion.p>
@@ -35,7 +35,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 1 }}
-                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-lg">
+                    className="flex gap-4 items-center flex-wrap justify-center lg:justify-start text-sm lg:text-md">
                     <FaEnvelope className="hover:text-white" />
                     {CONTACT.email}
                 </motion.p>

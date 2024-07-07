@@ -1,12 +1,12 @@
-import aboutImage from "../assets/about.jpg";
-import { ABOUT_TEXT } from "../data/info";
+import aboutImage from "../assets/code.jpg";
+import { ABOUT_INFO } from "../data/info";
 import { motion } from "framer-motion";
 
 
 export default function About() {
     return (
         <section id="about" className="border-b border-neutral-900 pb-4 ">
-            <h2 className="my-20 text-4xl text-center">
+            <h2 className="my-20 text-center text-3xl lg:text-4xl ">
                 Sobre
                 <span className="text-neutral-500"> Mim</span>
             </h2>
@@ -24,13 +24,17 @@ export default function About() {
                     </div>
                 </motion.div>
                 <motion.div
-                    whileInView={{x: 0, opacity: 1}}
-                    initial={{x: 100, opacity: 0}}
-                    transition={{duration: 0.5}} 
+                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ x: 100, opacity: 0 }}
+                    transition={{ duration: 0.5 }}
                     className="w-full lg:w-1/2">
-                    <div className="flex justify-center lg:justify-start">
-                        <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+
+                    <div className="flex justify-center py-6 flex-col lg:justify-start ">
+                        {ABOUT_INFO.map((info, index) => (
+                            <p className="my-2 max-w-xl" key={index}>{info}</p>
+                        ))}
                     </div>
+
                 </motion.div>
             </div>
         </section>

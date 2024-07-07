@@ -27,20 +27,20 @@ export default function Hero() {
                             variants={container(0)}
                             initial={"hidden"}
                             animate={"visible"}
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
+                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl text-center lg:text-start"
                             children={"Gustavo Victor"} />
                         <motion.span
                             variants={container(0.5)}
                             initial={"hidden"}
                             animate={"visible"}
                             children={"Estudante de programação"}
-                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl lg:text-4xl tracking-tight text-transparent" />
+                            className="bg-gradient-to-r from-blue-900 via-slate-500 to-sky-500 bg-clip-text text-3xl lg:text-4xl tracking-tight text-transparent text-center lg:text-start" />
                         <motion.p
                             variants={container(1)}
                             initial={"hidden"}
                             animate={"visible"}
                             children={HERO_CONTENT}
-                            className="my-2 max-w-xl py-6 font-tight tracking-tighter" />
+                            className="my-2 max-w-xl py-6 font-tight tracking-tighter text-center lg:text-start" />
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2">
