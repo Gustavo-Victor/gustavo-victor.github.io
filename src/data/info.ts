@@ -53,7 +53,7 @@ export const PROJECTS = [
         title: "Kanban App",
         image: project1,
         description:
-            "Uma aplicação para gerenciar tarefas do dia a dia, com funcionalides como criação, mudança de status, exclusão e alternação de tema da aplicação.",
+            "Uma aplicação para gerenciar tarefas do dia a dia, com funcionalides como criação, mudança de status, exclusão da tarefa e alternação de tema da aplicação.",
         technologies: ["HTML", "TailwindCSS", "React"],
         repositoryURL: "https://github.com/Gustavo-Victor/kanban-app",
         projectURL: "https://kanban-app-five-fawn.vercel.app/"
@@ -62,7 +62,7 @@ export const PROJECTS = [
         title: "Secret Word Game",
         image: project2,
         description:
-            "Website que simula um jogo de descobrir a palavra secreta",
+            "Website que simula um jogo de adivinhdar a palavra secreta.",
         technologies: ["HTML", "CSS", "React"],
         repositoryURL: "https://github.com/Gustavo-Victor/secret-word-game",
         projectURL: "https://secret-word-game.netlify.app/"
@@ -89,7 +89,7 @@ export const PROJECTS = [
         title: "Thoughts",
         image: project5,
         description:
-            "Uma plataforma para cadastro e gerenciamento de ideias de usuários sobre algum tema.",
+            "Uma plataforma para cadastro e gerenciamento de ideias de usuários sobre qualquer tema.",
         technologies: ["HTML", "CSS", "PostgreSQL", "Node.js", "Express", "Handlebars"],
         repositoryURL: "https://github.com/Gustavo-Victor/thoughts",
         projectURL: "https://thoughts-7avl.onrender.com/"
