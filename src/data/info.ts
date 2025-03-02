@@ -1,20 +1,25 @@
 import project1 from "../assets/projects/kanban-app-image.png";
-import project2 from "../assets/projects/secret-word-game-image.png";
-import project3 from "../assets/projects/get-a-pet-image.png";
+// import project2 from "../assets/projects/secret-word-game-image.png";
+// import project3 from "../assets/projects/get-a-pet-image.png";
 import project4 from "../assets/projects/dev-finances-image.png";
 import project5 from "../assets/projects/thoughts-image.png";
 import project6 from "../assets/projects/js-calculator-image.png";
+import project7 from "../assets/projects/cultivation.png"; 
+import project8 from "../assets/projects/drum-machine.png";
+import project9 from "../assets/projects/imovi.png"
 
 
-export const HERO_CONTENT = `Estudo e desenvolvo projetos pessoais e acadêmicos em busca de primeira oportunidade na área.`;
+export const HERO_CONTENT = `Estudo e desenvolvo sites e aplicações web com e sem código.`;
 
 export const ABOUT_TEXT = `Sou um estudante de programação dedicado e um pouco curioso para aprender e criar aplicações web práticas e fáceis de usar. Posuo conhecimentos em tecnologias como ReactJS, Node.js, MySQL, PostgreSQL e MongoDB tendo desenvolvido diversos projetos. Atualmente busco minha primeira oportunidade na área.`;
 
 export const ABOUT_INFO = [
-    "💻  Desenvolvo aplicações, interfaces e APIS com programação",
-    "🧑‍🎓  Cursando análise e desenvolvimento de sistemas",
-    "💡  Interesse em desenvolvimento web",
-    "🚀  Em busca de primeira oportunidade como dev"
+    "❤️ Entusiasta da programação e tecnologia",
+    "💻 Aplicações, interfaces e APIS com programação e Wordpress",
+    "🔨 Projetos otimizados",
+    // "🧑‍🎓  Cursando análise e desenvolvimento de sistemas",
+    "🎨 Alta fidelidade no layout", 
+    // "🚀  Em busca de primeira oportunidade como dev"
 ]
 
 export const EXPERIENCES = [
@@ -53,35 +58,35 @@ export const PROJECTS = [
         title: "Kanban App",
         image: project1,
         description:
-            "Uma aplicação para gerenciar tarefas do dia a dia, com funcionalides como criação, mudança de status, exclusão da tarefa e alternação de tema da aplicação.",
-        technologies: ["HTML", "TailwindCSS", "React"],
+            "Uma aplicação para gerenciar tarefas do dia a dia, com funcionalides como criação, mudança de status, exclusão da tarefa, entre outras.",
+        technologies: ["TailwindCSS", "React", "LocalStorage"],
         repositoryURL: "https://github.com/Gustavo-Victor/kanban-app",
         projectURL: "https://kanban-app-five-fawn.vercel.app/"
     },
     {
-        title: "Secret Word Game",
-        image: project2,
+        title: "Cultivation",
+        image: project7,
         description:
-            "Website que simula um jogo de adivinhdar a palavra secreta.",
-        technologies: ["HTML", "CSS", "React"],
-        repositoryURL: "https://github.com/Gustavo-Victor/secret-word-game",
-        projectURL: "https://secret-word-game.netlify.app/"
+            "Blog em Wordpress sobre cultivo de plantas verticais em espaços pequenos.",
+        technologies: ["Wordpress", "Elementor", "Astra", "Contact Form 7", "Rank Math SEO"],
+        // repositoryURL: "https://github.com/Gustavo-Victor/secret-word-game",
+        projectURL: "https://cultivation.com.br"
     },
     {
-        title: "Get a Pet",
-        image: project3,
+        title: "Drum Machine",
+        image: project8,
         description:
-            "Aplicação fullstack que simula um sistema de adoção de pets, com funcionalidades como gerenciamento de usuários, pets, agendamento para adoção, entre outras.",
-        technologies: ["HTML", "CSS", "React", "MongoDB", "Node.js", "Express", "JWT", "API"],
-        repositoryURL: "https://github.com/Gustavo-Victor/get-a-pet",
-        projectURL: "https://get-a-pet-mpw4.onrender.com/"
+            "Aplicação React que permite ao usuário reproduzir sons de bateria e outros instrumentos musicais.",
+        technologies: ["SASS", "React", "Redux"],
+        repositoryURL: "https://github.com/Gustavo-Victor/drum-machine",
+        projectURL: "https://drum-machine-sage-five.vercel.app/"
     },
     {
         title: "Dev Finances",
         image: project4,
         description:
             "Sistema de gerenciamento de rendas e despesas do mês.",
-        technologies: ["HTML", "CSS", "JS"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         repositoryURL: "https://github.com/Gustavo-Victor/dev-finances",
         projectURL: "https://gustavo-victor.github.io/dev-finances"
     },
@@ -90,7 +95,7 @@ export const PROJECTS = [
         image: project5,
         description:
             "Uma plataforma para cadastro e gerenciamento de ideias de usuários sobre qualquer tema.",
-        technologies: ["HTML", "CSS", "PostgreSQL", "Node.js", "Express", "Handlebars"],
+        technologies: ["PostgreSQL", "Node.js", "Express", "Handlebars"],
         repositoryURL: "https://github.com/Gustavo-Victor/thoughts",
         projectURL: "https://thoughts-7avl.onrender.com/"
     },
@@ -99,9 +104,18 @@ export const PROJECTS = [
         image: project6,
         description:
             "Aplicação que simula algumas funcionalidades principais de uma calculadora.",
-        technologies: ["HTML", "SASS", "React", "TypeScript"],
+        technologies: ["SASS", "React", "TypeScript"],
         repositoryURL: "https://github.com/Gustavo-Victor/js-calculator",
         projectURL: "https://js-calculator-mu-five.vercel.app/"
+    },
+    {
+        title: "iMovi",
+        image: project9,
+        description:
+            "Site institucional sobre uma marca fictícia do ramo de imóveis.",
+        technologies: ["HTML", "CSS", "Bootstrap"],
+        repositoryURL: "https://github.com/Gustavo-Victor/imovi",
+        projectURL: "https://gustavo-victor.github.io/imovi"
     },
 ];
 

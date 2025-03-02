@@ -4,8 +4,9 @@ import {
     RiCss3Line,
     RiJavascriptLine,
     RiNodejsLine,
+    RiWordpressFill,
 } from "react-icons/ri";
-import { SiMongodb, SiPostgresql } from "react-icons/si";
+// import { SiMongodb, SiPostgresql } from "react-icons/si";
 import { motion } from "framer-motion";
 
 
@@ -68,7 +69,7 @@ export default function Technologies() {
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
                     initial={{ y: 10 }}
-                    transition={{duration: 2, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
+                    transition={{duration: 3.5, ease: "linear", repeat: Infinity, repeatType: "reverse"}}
                     animate={{ y: [10, -10] }}>
                     <RiNodejsLine className="text-7xl text-lime-800" />
                 </motion.div>
@@ -76,16 +77,23 @@ export default function Technologies() {
                     className="rounded-2xl border-4 border-neutral-800 p-4"
                     initial={{ y: 10 }}
                     animate={{ y: [10, -10] }}
+                    transition={{duration: 5.2, ease: "linear", repeat: Infinity, repeatType: "reverse"}}>
+                    <RiWordpressFill className="text-7xl text-blue-600" />
+                </motion.div>
+                {/* <motion.div
+                    className="rounded-2xl border-4 border-neutral-800 p-4"
+                    initial={{ y: 10 }}
+                    animate={{ y: [10, -10] }}
                     transition={{duration: 3, ease: "linear", repeat: Infinity, repeatType: "reverse"}}>
                     <SiMongodb className="text-7xl text-green-600" />
-                </motion.div>
-                <motion.div
+                </motion.div> */}
+                {/* <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-4"
                     initial={{ y: 10 }}
                     animate={{ y: [10, -10] }}
                     transition={{duration: 2.5, ease: "linear", repeat: Infinity, repeatType: "reverse"}}>
                     <SiPostgresql className="text-7xl text-sky-900" />
-                </motion.div>
+                </motion.div> */}
             </motion.div>
         </section>
     )

@@ -33,7 +33,7 @@ export default function Hero() {
                             variants={container(0.5)}
                             initial={"hidden"}
                             animate={"visible"}
-                            children={"Estudante de programação"}
+                            children={"Desenvolvedor Freelancer"}
                             className="bg-gradient-to-r from-blue-900 via-slate-500 to-sky-500 bg-clip-text text-3xl lg:text-4xl tracking-tight text-transparent text-center lg:text-start" />
                         <motion.p
                             variants={container(1)}
